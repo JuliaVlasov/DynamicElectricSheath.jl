@@ -67,6 +67,7 @@ $(SIGNATURES)
 
 ```math
 \\frac{d f_e}{dt} + v \\frac{d f_e}{dx} + \\frac{1}{\\mu] E \\frac{d f_e}{dv} = 0
+```
 """
 function advection!(fi, fe, vv_plus, vv_minus, EE_plus, EE_minus, nu, mu, dx, dv, dt)
 

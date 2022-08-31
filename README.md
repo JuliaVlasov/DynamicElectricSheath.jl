@@ -21,7 +21,7 @@ Two-species Vlasov-Poisson solver on $[-1,1] \times \mathbb{R}$
  
   * Author : Mehdi BASDI. 
   * Date : 27/07/2022.
-  * Translation in Julia : Pierre Navaro (@pnavaro) & Averil Prost (@averil-prost).
+  * Translation in Julia : [Averil Prost](https://github.com/averil-prost).
   * Date : 05/08/2022.
 
 ```bash
@@ -32,3 +32,12 @@ julia> using Pkg
 julia> Pkg.instantiate()
 julia> include("example.jl")
 ```
+
+If you want to develop the package use Revise.jl
+```
+cd DynamicElectricSheath.jl
+julia --project
+using Revise
+using DynamicElectricSheath
+
+The module is rebuilt after every change in src directory
